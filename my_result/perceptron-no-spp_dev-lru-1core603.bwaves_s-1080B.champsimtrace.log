@@ -1,0 +1,79 @@
+Initialize SIGNATURE TABLE
+ST_SET: 1
+ST_WAY: 256
+ST_TAG_BIT: 16
+ST_TAG_MASK: ffff
+
+Initialize PATTERN TABLE
+PT_SET: 512
+PT_WAY: 4
+SIG_DELTA_BIT: 7
+C_SIG_BIT: 4
+C_DELTA_BIT: 4
+
+Initialize PREFETCH FILTER
+FILTER_SET: 1024
+
+Initialize PERCEPTRON
+PERC_ENTRIES: 4096
+PERC_FEATURES: 9
+
+*** ChampSim Multicore Out-of-Order Simulator ***
+
+Warmup Instructions: 20000000
+Simulation Instructions: 10000000
+Number of CPUs: 1
+LLC sets: 2048
+LLC ways: 16
+Off-chip DRAM Size: 4096 MB Channels: 1 Width: 64-bit Data Rate: 1600 MT/s
+
+CPU 0 runs /home/ubuntu/PPF_Paper_Source_Code-master/traces/603.bwaves_s-1080B.champsimtrace.xz
+Heartbeat CPU 0 instructions: 10000003 cycles: 4334736 heartbeat IPC: 2.30695 cumulative IPC: 2.30695 (Simulation time: 0 hr 0 min 21 sec) 
+Heartbeat CPU 0 instructions: 20000000 cycles: 8838228 heartbeat IPC: 2.2205 cumulative IPC: 2.2629 (Simulation time: 0 hr 0 min 46 sec) 
+
+Warmup complete CPU 0 instructions: 20000002 cycles: 8838229 (Simulation time: 0 hr 0 min 46 sec) 
+
+Heartbeat CPU 0 instructions: 30000001 cycles: 17371584 heartbeat IPC: 1.17187 cumulative IPC: 1.17187 (Simulation time: 0 hr 1 min 14 sec) 
+Finished CPU 0 instructions: 10000003 cycles: 8533356 cumulative IPC: 1.17187 (Simulation time: 0 hr 1 min 14 sec) 
+
+CPU 0 Branch Prediction Accuracy: 91.818% MPKI: 11.6481
+
+ChampSim completed all CPUs
+
+Region of Interest Statistics
+
+CPU 0 cumulative IPC: 1.17187 instructions: 10000003 cycles: 8533356
+L1D TOTAL     ACCESS:    1741896  HIT:    1741851  MISS:         45
+L1D LOAD      ACCESS:    1389098  HIT:    1389094  MISS:          4
+L1D RFO       ACCESS:     352798  HIT:     352757  MISS:         41
+L1D PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1D WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1D PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+L1I TOTAL     ACCESS:    2447417  HIT:    2447417  MISS:          0
+L1I LOAD      ACCESS:    2447417  HIT:    2447417  MISS:          0
+L1I RFO       ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1I WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+L2C TOTAL     ACCESS:         91  HIT:         45  MISS:         46
+L2C LOAD      ACCESS:          4  HIT:          4  MISS:          0
+L2C RFO       ACCESS:         41  HIT:          0  MISS:         41
+L2C PREFETCH  ACCESS:          5  HIT:          0  MISS:          5
+L2C WRITEBACK ACCESS:         41  HIT:         41  MISS:          0
+L2C PREFETCH  REQUESTED:       7814  ISSUED:       7814  USEFUL:       6499  USELESS:         55
+LLC TOTAL     ACCESS:         89  HIT:         43  MISS:         46
+LLC LOAD      ACCESS:          0  HIT:          0  MISS:          0
+LLC RFO       ACCESS:         41  HIT:          0  MISS:         41
+LLC PREFETCH  ACCESS:          5  HIT:          0  MISS:          5
+LLC WRITEBACK ACCESS:         43  HIT:         43  MISS:          0
+LLC PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:       3764
+Major fault: 0 Minor fault: 1157
+Printing all the perceptron weights to: perc_weights_0.csv
+
+DRAM Statistics
+ CHANNEL 0
+ RQ ROW_BUFFER_HIT:         34  ROW_BUFFER_MISS:         12
+ DBUS_CONGESTED:         35
+ WQ ROW_BUFFER_HIT:         19  ROW_BUFFER_MISS:         17  FULL:          0
+
+ AVG_CONGESTED_CYCLE: 13

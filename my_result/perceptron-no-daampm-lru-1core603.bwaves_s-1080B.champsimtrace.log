@@ -1,0 +1,62 @@
+
+*** ChampSim Multicore Out-of-Order Simulator ***
+
+Warmup Instructions: 20000000
+Simulation Instructions: 10000000
+Number of CPUs: 1
+LLC sets: 2048
+LLC ways: 16
+Off-chip DRAM Size: 4096 MB Channels: 1 Width: 64-bit Data Rate: 1600 MT/s
+
+CPU 0 runs /home/ubuntu/PPF_Paper_Source_Code-master/traces/603.bwaves_s-1080B.champsimtrace.xz
+L2C DA-AMPM prefetcher
+Heartbeat CPU 0 instructions: 10000003 cycles: 4334715 heartbeat IPC: 2.30696 cumulative IPC: 2.30696 (Simulation time: 0 hr 0 min 22 sec) 
+Heartbeat CPU 0 instructions: 20000000 cycles: 8838244 heartbeat IPC: 2.22048 cumulative IPC: 2.26289 (Simulation time: 0 hr 0 min 47 sec) 
+
+Warmup complete CPU 0 instructions: 20000002 cycles: 8838245 (Simulation time: 0 hr 0 min 47 sec) 
+
+Heartbeat CPU 0 instructions: 30000001 cycles: 17371710 heartbeat IPC: 1.17186 cumulative IPC: 1.17186 (Simulation time: 0 hr 1 min 16 sec) 
+Finished CPU 0 instructions: 10000003 cycles: 8533466 cumulative IPC: 1.17186 (Simulation time: 0 hr 1 min 16 sec) 
+
+CPU 0 Branch Prediction Accuracy: 91.818% MPKI: 11.6481
+
+ChampSim completed all CPUs
+
+Region of Interest Statistics
+
+CPU 0 cumulative IPC: 1.17186 instructions: 10000003 cycles: 8533466
+L1D TOTAL     ACCESS:    1741896  HIT:    1741851  MISS:         45
+L1D LOAD      ACCESS:    1389098  HIT:    1389094  MISS:          4
+L1D RFO       ACCESS:     352798  HIT:     352757  MISS:         41
+L1D PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1D WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1D PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+L1I TOTAL     ACCESS:    2447417  HIT:    2447417  MISS:          0
+L1I LOAD      ACCESS:    2447417  HIT:    2447417  MISS:          0
+L1I RFO       ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1I WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+L2C TOTAL     ACCESS:         92  HIT:         45  MISS:         47
+L2C LOAD      ACCESS:          4  HIT:          4  MISS:          0
+L2C RFO       ACCESS:         41  HIT:          0  MISS:         41
+L2C PREFETCH  ACCESS:          6  HIT:          0  MISS:          6
+L2C WRITEBACK ACCESS:         41  HIT:         41  MISS:          0
+L2C PREFETCH  REQUESTED:       6495  ISSUED:       6495  USEFUL:       6137  USELESS:        120
+LLC TOTAL     ACCESS:         91  HIT:         44  MISS:         47
+LLC LOAD      ACCESS:          0  HIT:          0  MISS:          0
+LLC RFO       ACCESS:         41  HIT:          0  MISS:         41
+LLC PREFETCH  ACCESS:          6  HIT:          0  MISS:          6
+LLC WRITEBACK ACCESS:         44  HIT:         44  MISS:          0
+LLC PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:       3652
+Major fault: 0 Minor fault: 1157
+
+L2C DA-AMPM prefetcher final stats
+
+DRAM Statistics
+ CHANNEL 0
+ RQ ROW_BUFFER_HIT:         35  ROW_BUFFER_MISS:         12
+ DBUS_CONGESTED:         33
+ WQ ROW_BUFFER_HIT:         20  ROW_BUFFER_MISS:         16  FULL:          0
+
+ AVG_CONGESTED_CYCLE: 14
